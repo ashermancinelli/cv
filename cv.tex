@@ -32,14 +32,18 @@ My current focuses include:
 \end{positions}
 
 \begin{itemize}
-  \item Led development team to port high-performance linear solver \textit{HiOp} to run on GPUs from several several vendors (AMD, NVIDIA).
-  \item Led several team-wide hackathons of up to ~40 members of 5 national laboratories to port power-grid simulations to GPU.
+  \item Received PNNL's Outstanding Performance award twice: once for performance on ExaSGD with the Exascale Computing Project, and another for optimizing a biological simulation code expanded upon below.
+  \item Led development team to port high-performance linear solver \hiop to run on GPUs from several several vendors (AMD, NVIDIA).
+  \item Led several team-wide hackathons of up to $\approx 40$ members of 5 national laboratories to port ExaSGD software stack components to GPU.
   \item Reimplemented and refactored parts of NIH protein-folding codebase with 30,000+ users worldwide (can be found \href{https://github.com/Electrostatics/apbs}{\underline{on its github repo}})
-  \item Increased performance of a biological simulation by ~$2,500\%$ (from 2 weeks to 8 minutes).
-  \item Increased performance of an LED simulation by ~$15,000\%$ (from 6 weeks to 4 minutes).
-  \item Optimization work described as \textit{the posterchild for how PNNL should operate} by a panel of external collaborators.
-  \item Reproduced closed-source research with a seq-2-seq neural network for OCR (\textit{Rosetta} network).
-  \item Developed new implementation for an \verb|MPI_Gatherv| call using tree-based reduction algorithm.
+  \item Received recognition and accolades for optimization work on several projects as a part of Research Computing :
+  \begin{itemize}
+    \item Increased performance of a biological simulation by $\approx 2,500\%$ (from 2 weeks to 8 minutes) by developing an \mpi aware \cpp codebase and interfacing with the original Python-based research code.
+    \item Increased performance of an LED simulation by $\approx 15,000\%$ (from 6 weeks to 4 minutes) by porting \matlab codebase to \cee and \cpp. I developed a parallel implementation of roughly the same algorithm using device-local shared memory and distributed memory via \mpi.
+    \item Optimization work described as \textit{the posterchild for how PNNL should operate} by a panel of external collaborators.
+    \item Developed new implementation for an \mpigv call using tree-based reduction algorithm.
+  \end{itemize}
+  \item Reproduced closed-source research with a sequence-to-sequence neural network for OCR (\textit{Rosetta} network).
   \item Led training sessions on code optimization and HPC techniques at PNNL.
   \item Gave talks about optimizing research code and developing inter-language interfaces to be performant.
 \end{itemize}
@@ -70,8 +74,8 @@ My current focuses include:
 \section{Skills}
 
 \begin{description}
-  \item[Programming] C/C++, CUDA, CMake, MPI, Python, \LaTeX, Shell Scripting
-  \item[Tools] Git, Linux, Vim/Tmux, GNU/Lua module systems
+  \item[Programming] \cee/\cpp, \cuda, CMake, MPI, Python, \LaTeX, Shell Scripting
+  \item[Tools] Git, Linux, Vim/Tmux, GNU/Lua environment module systems
   \item[Soft Skills] Public speaking, technical writing, editorial review
 \end{description}
 
@@ -80,8 +84,8 @@ My current focuses include:
 \begin{itemize}
   \item Gave talk at \href{https://fullstacktc.org/user/ashermancinelli}{ \underline{ local developer meetup } }. \printdate{2017}
   \item Member of technical editorial review board for Brett Slatkin's \textit{Effective Python}. \printdate{2019}
-  \item Contributor to various open-source projects, such as \textit{PyTorch}, \textit{ElasticSearch}, and \textit{Hiop} (see GitHub profile).
-  \item Reader of ISO C++ TS papers discussing the development of the language.
+  \item Contributor to various open-source projects, such as \pyt, \texttt{ElasticSearch}, and \hiop (see GitHub profile).
+  \item Reader of ISO \cpp TS papers discussing the development of the language.
 \end{itemize}
 
 \end{document}

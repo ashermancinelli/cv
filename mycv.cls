@@ -59,6 +59,8 @@
   heightrounded,
 }
 
+\RequirePackage{xspace}
+
 % List setting
 \RequirePackage[inline]{enumitem}
 \setlist{noitemsep,partopsep=0pt,leftmargin=1.2em}
@@ -267,3 +269,14 @@
     }
   \end{refsection}
 }
+
+\newcommand{\HiOp}{{HiOp}\xspace}
+\newcommand{\hiop}{\HiOp}
+\newcommand{\cpp}{\texttt{C++}\xspace}
+\newcommand{\cee}{\texttt{C}\xspace}
+\newcommand{\pyt}{\texttt{PyTorch}\xspace}
+\newcommand{\matlab}{\texttt{MATLAB}\xspace}
+\newcommand{\cuda}{\texttt{CUDA}\xspace}
+\newcommand{\mpigv}{\texttt{MPI{\textunderscore}Gatherv}\xspace}
+\newcommand{\mpi}{\texttt{MPI}\xspace}
+% \newcommand{}{\texttt{}\xspace}
